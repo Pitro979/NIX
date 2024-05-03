@@ -23,6 +23,7 @@
   } @ inputs: {
     nixosConfigurations.pijo = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
+      system = "x86_64-linux";
       modules = [
         ./hosts/pijo
         home-manager.nixosModules.home-manager
