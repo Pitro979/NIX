@@ -1,13 +1,15 @@
-{config, pkgs, inputs, ...}:
-
-let
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}: let
   config = import ./config;
-  nvim = inputs.nixvim.legacyPackages.x86_64-linux.makeNixvimWithModule{
+  nvim = inputs.nixvim.legacyPackages.x86_64-linux.makeNixvimWithModule {
     inherit pkgs;
     module = config;
   };
-in
-{ 
+in {
   home.packages = with pkgs; [
     nvim
   ];

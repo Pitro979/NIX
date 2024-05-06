@@ -1,11 +1,14 @@
-{ config, pkgs, ... }:
-
 {
+  config,
+  pkgs,
+  inputs,
+  ...
+}: {
   home = {
     sessionVariables = {
       EDITOR = "nvim";
       BROWSER = "firefox";
-      TERMINAL = "kitty"; 
+      TERMINAL = "kitty";
       WLR_NO_HARDWARE_CURSORS = "1";
       WLR_RENDERER_ALLOW_SOFTWARE = "1";
       CLUTTER_BACKEND = "wayland";

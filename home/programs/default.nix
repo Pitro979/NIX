@@ -1,9 +1,12 @@
-{config, pkgs, inputs, ...}:
-
 {
-  imports = [ 
+  config,
+  pkgs,
+  inputs,
+  ...
+}: {
+  imports = [
     ./hypr
-    ./nixvim
+    #./nixvim
     ./kitty.nix
   ];
 }

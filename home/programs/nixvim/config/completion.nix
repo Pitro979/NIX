@@ -1,4 +1,5 @@
-{
+{inputs, ...}
+: {
   plugins = {
     cmp-emoji = {enable = true;};
     cmp = {

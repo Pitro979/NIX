@@ -1,6 +1,10 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  inputs,
+  ...
+}: {
   programs.kitty = {
     enable = true;
     font.name = "fira-code-nerdfont";

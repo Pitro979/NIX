@@ -19,6 +19,7 @@
     nixpkgs,
     home-manager,
     hyprland,
+    nixvim,
     ...
   } @ inputs: {
     nixosConfigurations.pijo = nixpkgs.lib.nixosSystem {
